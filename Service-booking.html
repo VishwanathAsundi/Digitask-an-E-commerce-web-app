@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book-services</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rokkitt" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body class="service-booking">
+
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-5">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo_top.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-1">
+                    <ul class="d-none d-md-none d-lg-inline-block">
+                        <li>
+                            <div class="input-group mr-2 location-box">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text border-0" id="basic-addon1"><i class="fas fa-map-marker-alt"></i></span>
+                                </div>
+                                <input type="text" class="border-0 pl-2 font-weight-bold" value="" placeholder="Sydney">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input-group search-box">
+                                <div class="input-group-prepend">
+                                    <a href="#"><span class="input-group-text bg-white border-0" id="basic-addon1"><i
+                                                class="fas fa-search"></i></span></a>
+                                </div>
+                                <input type="text" placeholder=" Search for a service" aria-label="search service"
+                                    class="border-0" aria-describedby="basic-addon1">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4 col-5">
+                    <div class="right-icons">
+                        <a herf="#" class="download-link d-none d-md-inline" data-toggle="modal" data-target="#exampleModalCenter">
+                            <i class="fa fa-mobile-alt"></i> 
+                            <span class="d-none d-md-none d-lg-inline">Download Apps</span>
+                        </a>
+                        <a herf="#" class="user-login" data-toggle="dropdown" data-target="#centerModal">
+                            <i class="fa fa-user"></i><span class="d-none d-md-inline">Roger</span><i class="fas fa-caret-down d-none d-md-inline"></i>
+                        </a>
+                        <div class="drop dropdown-menu" aria-labelledby="dropdownOption">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">My Orders</a>
+                            <a class="dropdown-item" href="index.html">Logout</a>
+                        </div>
+                        <!-- <a herf="#" class="cart-icon"><i class="fa fa-shopping-cart"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="ac-services mb-5">
+                        <table class="table bg-white table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="border-0">AC Services</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th class="text-muted">Item</th>
+                                    <th class="text-right text-muted">Price</th>
+                                    <th class="text-center text-muted">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="font-weight-bold">Basic Cost</span>
+                                        <p class="text-muted">we change a basic visit
+                                            cost</p>
+                                    </td>
+                                    <td class="text-right">99 A$</td>
+                                    <td class="text-right">
+                                        <div class="float-right">
+                                            <div class="input-group add-item ">
+                                                <div class="input-group-prepend">
+                                                    <a href="#" class="input-group-text" id="basic-addon1"><i class="fas fa-minus"></i></a>
+                                                </div>
+                                                <span class="bg-white">1</span>
+                                                <div class="input-group-append">
+                                                    <a href="#" class="input-group-text " id="basic-addon1"><i class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">General Repair</td>
+                                    <td class="text-right">200$</td>
+                                    <td>
+                                        <div class="float-right">
+                                            <div class="input-group add-item">
+                                                <div class="input-group-prepend">
+                                                    <a href="#" class="input-group-text" id="basic-addon1"><i class="fas fa-minus"></i></a>
+                                                </div>
+                                                <span class="bg-white">1</span>
+                                                <div class="input-group-append">
+                                                    <a href="#" class="input-group-text text-right" id="basic-addon1"><i
+                                                            class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Upto 1T</td>
+                                    <td class="text-right">99 A$</td>
+                                    <td class="add text-right"><a href="#">Add</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Upto 1.5T</td>
+                                    <td class="text-right">99 A$</td>
+                                    <td class="add text-right"><a href="#">Add</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Installation</td>
+                                    <td class="text-muted text-right">upon inspection</td>
+                                    <td class="add text-right"><a href="#">Add</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Repair</td>
+                                    <td class="text-muted text-right">upon inspection</td>
+                                    <td class="add text-right"><a href="#">Add</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Repair Filter</td>
+                                    <td class="text-muted text-right">upon inspection</td>
+                                    <td class="add text-right"><a href="#">Add</a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                </tr>
+                                <!-- <tr>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                </tr> -->
+                                <tr>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                    <td class="border-0"></td>
+                                </tr>
+                            </tbody>
+                            <!-- <tfoot>
+                                <tr class="bg-light">
+                                    <td>Total 599 A$ + On inspection cost</td>
+                                    <td></td>
+                                    <td class="add text-right"><a href="login.html">Book</a></td>
+                                </tr>
+                            </tfoot> -->
+                        </table>
+                        <div class="bot d-md-inline-block">
+                            <div class="float-left">
+                                <p>Total 599 A$ + On inspection cost</p>
+                            </div>
+                            <div class="float-right ml-auto">
+                                <a class="border-4px" href="login.html">Book</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="notes">
+                        <strong>Note</strong><br>
+                        <div class="d-flex">
+                            <div class=""><img src="images/green-checked.png"></div>
+                            <div class="pt-1">
+                                <p>Warranty on parts will be as per Brand</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class=""><img src="images/green-checked.png"></div>
+                            <div class="">
+                                <p>Warranty on parts will be as per Brand</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class=""><img src="images/green-checked.png"></div>
+                            <div class="">
+                                <p>30 day warranty will be Provided</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class=""><img src="images/green-checked.png"></div>
+                            <div class="">
+                                <p>If an issue id reported by our technician but the
+                                    customer fails to act, it will not be Digitask responsibility.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <strong>Procedure</strong>
+                        <p>Cost can vary post inspection according to the dept of the issue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade secondmodal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="exampleModalCenterTitle">Download Apps</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="font-weight-bold info">We’ll send a download link via SMS to your Phone</p>
+                    <form action="" method="post">
+                        <input type="text" name="phone" placeholder="Phone" id="phone" class="form-control mobile-num">
+                        <button type="button" class="btn submit form-control font-weight-bold">Send SMS</button>
+                    </form>
+                    <div class="seperator">
+                        <p class="line">or</p>
+                    </div>
+                    <div class="store-image">
+                        <ul>
+                            <li>
+                                <img src="images/google_play.png">
+                            </li>
+                            <li>
+                                <img src="images/app_store.png">
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

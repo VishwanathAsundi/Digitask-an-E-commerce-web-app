@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book appointment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rokkitt" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="set-bg">
+    <div class="fixed-top">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-5">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo_top.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-4"></div>
+                    <div class="col-md-1 col-3">
+                        <div class="back_button">
+                        <a href="javascript:history.back()" class="">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-5 pt-4"></section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="customer mb-3">
+                    <div class="float-left custom-profile">
+                        <div class="float-left">
+                            <img src="images/profile_image.jpg">
+                        </div>
+                        <div class="float-left visitor-info">
+                            <p>Chad Barrett</p>
+                            <p>Member</p>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <a href="login.html">Logout</a>
+                    </div>
+                </div>
+
+                <div id="accordion">
+                    
+                    <div id="headingOne" class="mt-3">
+                        <div class="service-location">
+                            <a class="" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Address
+                                | Service Location
+                                <i class="fas fa-chevron-down float-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion" aria-labelledby="headingOne">
+                        <div class="google_map_location mb-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5796128702273!2d77.58993051430464!3d12.998718217800917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae164451c79e63%3A0x4b46243086327ed5!2sBangalore+Palace%2C+Jayamahal%2C+Bengaluru%2C+Karnataka+560006!5e0!3m2!1sen!2sin!4v1545983054454"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div class="input-group search-box">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-white border-0" id="basic-addon1"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" placeholder=" Search location" aria-label="search service" class="border-0"
+                                    aria-describedby="basic-addon1">
+                                <div class="input-group-append">
+                                    <a href="#" class="input-group-text border-0" id="basic-addon1">Go</a>
+                                </div>
+                            </div>
+                            <div class="choosen-address">
+                                <p>Bangalore Palace, Karnataka 01, India</p>
+                            </div>
+                            <div class="complete-address">
+                                <form action="/.php">
+                                    <div class="xyz mb-2"><input class="form-control" type="text" placeholder="Door Flat No"></div>
+                                    <div class="xyz mb-2"><input class="form-control" type="text" placeholder="Landmark"></div>
+                                    <div class="xyz mb-2"><input class="form-control" type="text" placeholder=" Home "></div>
+                                    <div class="xyz mb-2"><input class="form-control" type="button" value="Save"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="headingTwo" class="mt-3">
+                        <div class="slot">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo">Appointment
+                                Slot <i class="fas fa-chevron-down float-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="appointment-slot">
+                            <div class="choosen-date">
+                                <form action="/action_page.php">
+                                    <select name="month" class="form-control mb-2">
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="may">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                    <select name="year" class="form-control mb-2">
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                    </select>
+                                    <br><br>
+
+                                    <div class="slide-dates mb-5 mt-4">
+                                        <a href="#" class="prev rounded-circle"><i class="fas fa-chevron-circle-left"></i></a>
+                                        <div class="dates">
+                                            <div class="row ml-4 mr-4">
+                                                <div class="col text-center week-date">
+                                                    <a href="#">
+                                                        <h2>1</h2>
+                                                        <p class="">MON</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col text-center week-date">
+                                                    <a href="#">
+                                                        <h2>2</h2>
+                                                        <p class="">TUE</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col text-center week-date">
+                                                    <a href="#">
+                                                        <h2>3</h2>
+                                                        <p class="">WED</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col d-none d-md-block text-center week-date">
+                                                    <a href="#">
+                                                        <h2>4</h2>
+                                                        <p class="">THU</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col d-none d-md-block text-center week-date">
+                                                    <a href="#">
+                                                        <h2>5</h2>
+                                                        <p class="">FRI</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col d-none d-lg-block text-center week-date">
+                                                    <a href="#">
+                                                        <h2>6</h2>
+                                                        <p class="">SAT</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col d-none d-lg-block text-center week-date">
+                                                    <a href="#">
+                                                        <h2>7</h2>
+                                                        <p class="">SUN</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a href="#" class="next"><i class="fas fa-chevron-circle-right"></i></a>
+
+                                    </div>
+
+                                    <div class="time-slots mt-5">
+                                        <p>Available slots for Thursday</p>
+                                        <div>
+                                            <a href="#">10 AM to 11 AM</a>
+                                            <a href="#" class="mr-2">11 AM to 12 PM</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="payment mb-4 mt-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="cash mt-2">
+                                <label for="pay">
+                                    <img src="images/cash.png">
+                                    <span>Pay with cash</span>
+                                    <div class="float-right">
+                                        <input type="radio" class="pay" id="pay" name="pay">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cash mt-2">
+                                <label for="pay1">
+                                    <img src="images/credit.png">
+                                    <span>Pay Online</span>
+                                    <div class="float-right">
+                                        <input type="radio" class="pay" id="pay1" name="pay">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book border-4px text-center mb-3">
+                    <a href="profile.html">Book</a>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <table class="table bg-white cart border-4px">
+                    <thead>
+                        <tr>
+                            <th class="border-0">Your Cart</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="font-weight-bold">
+                            <td>AC Repair</td>
+                            <td>99$</td>
+                        </tr>
+                        <tr class="font-weight-bold">
+                            <td>House Deep Cleaning</td>
+                            <td>399$</td>
+                        </tr>
+                        <tr class="font-weight-bold">
+                            <td>Basic Cost</td>
+                            <td>99$</td>
+                        </tr>
+                        <tr class="bg-light text-black">
+                            <td>SubTotal</td>
+                            <td>498$</td>
+                        </tr>
+                        <tr class="bg-light text-black">
+                            <td class="border-0">GST(10%)</td>
+                            <td class="border-0">45$</td>
+                        </tr>
+                        <tr class="bg-light text-black">
+                            <td class="border-0">Service tax</td>
+                            <td class="border-0">45$</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="bg-light text-black border-4px">
+                            <td class="border-0">Total</td>
+                            <td class="border-0">588$</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

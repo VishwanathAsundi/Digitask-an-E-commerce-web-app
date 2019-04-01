@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rokkitt" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="set-scroll">
+    <section class="fixed-top">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo_top.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="right-icons">
+                            <a herf="#" class="download-link d-none d-md-inline" data-toggle="modal" data-target="#exampleModalCenter">
+                                <i class="fa fa-mobile-alt"></i> 
+                                <span class="d-none d-lg-inline">Download Apps</span>
+                            </a>
+                            <a herf="#" class="user-login" data-toggle="dropdown" data-target="#centerModal">
+                                <i class="fa fa-user"></i><span class="d-none d-md-inline">Roger</span><i class="fas fa-caret-down d-none d-md-inline"></i>
+                            </a>
+                            <div class="drop dropdown-menu" aria-labelledby="dropdownOption">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">My Orders</a>
+                                <a class="dropdown-item" href="index.html">Logout</a>
+                            </div>
+                            <a herf="#" class="cart-icon"><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="textbox">
+                    <p class="alignleft bottom_spaces">CART</p>
+                    <p class="alignright bottom_spaces">
+                        <a href="#" class="close-btn">Close</a>
+                    </p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="textbox">
+                    <div class="float-left">
+                        <div class="sidebar-img float-left">
+                            <img src="images/electronics/ac.png" alt="Ac"> 
+                        </div>
+                        <div class="float-left ml-3">
+                            <p class="bottom_spaces">AC Repair</p>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                            <p class="float-right bottom_spaces">99$</p>
+                    </div>  
+                    <div class="clearfix"></div>
+                </div>
+                <div class="textbox">
+                    <div class="float-left">
+                        <div class="sidebar-img float-left">
+                            <img src="images/electronics/ac.png" alt="Ac"> 
+                        </div>
+                        <div class="float-left ml-3">
+                            <p class=" bottom_spaces">AC Repair</p>
+                            <p class="repairopt bottom_spaces">+ On site inspection</p>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <p class="float-right">399$</p>
+                    </div>
+                    <div class="clearfix"></div> 
+                </div>    
+                <div class="textbox">
+                    <div class="float-left">
+                        <div class="sidebar-img float-left">
+                            <img src="images/electronics/ac.png" alt="AC">
+                        </div>
+                        <div class="float-left ml-3">
+                            <p class="bottom_spaces">Basic Cost</p>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <p class="bottom_spaces">99$</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>  
+                <div class="last-item">
+                    <div class="textbox">
+                        <div class="float-left">
+                            <p class="bottom_spaces">Total</p>
+                        </div>
+                        <div class="float-right">
+                            <p class="bottom_spaces">499 A$</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="textbox checkout-btn">
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-4 pt-4"></section>
+
+    <div class="userinformation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="profile-info">
+                        <div class="image">
+                            <img class="border-50cent" src="images/profile_image3.jpg">
+                            <p class="u-name">Bruce Sanders</p>
+                            <p class="uinfo">Downtown Area, Sidney</p>
+                            <p class="u-edit"><a href="!#" class="text-red" data-toggle="modal" data-target="#editModal">EDIT PROFILE</a></p>
+                        </div>
+                        <div class="accnt-info">
+                            <div class="usernameinfo">
+                                <p class="uinfo">EMAIL</p>
+                                <p class="mailid">bruce.sanders@mail.com</p>
+                            </div>
+                            <div class="contactinfo">
+                                <p class="uinfo">PHONE</p>
+                                <p class="contactnum">(462)691-1253</p>
+                            </div>
+                        </div>
+                        <div class="address-info">
+                            <p class="home">HOME</p>
+                            <p class="address-text">#73 First Floor, New Road, 61 Arthur St, Strathfield NSW 2135, Australia</p>
+                            <a href="#" class="delete-btn">Delete</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-8 col-12">
+                    <p class="ordertxt font-weight-bold">Recent Orders</p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="order-info border-4px">
+                            <div class="heading" id="headingOne">
+                                <p class="collapse_header mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Order ID #8482
+                                    <span class="btn btn-sm btn-warning">On going</span>
+                                    <i class="fas fa-chevron-down float-right m-2"></i>
+                                </p>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="cardbody">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4 col-4">
+                                                <div class="slot-ap mb-4">
+                                                    <p class="first-p">Appointment Slot</p>
+                                                    <p class="second-p">10 AM to 12 PM</p>
+                                                    <p class="first-p">2nd Nov 2018</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-5">
+                                                <div class="service-cost pl-4">
+                                                    <p class="first-p">Total Server Cost</p>
+                                                    <p class="second-p">389 A$</p>
+                                                    <p class="first-p">+ On Inspection</p>
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-4 col-3">
+                                                <div class="pending-info pl-4">
+                                                    <p class="first-p">Total Pending</p>
+                                                    <p class="second-p text-red">50 A$</p>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bill-info  pb-4">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-7 col-12">
+                                                    <p class="largetxt mt-4">INVOICE</p>
+                                                    <p class="smalltxt mb-2">Professional Invoice</p>
+                                                    <p>Assigned to</p>
+                                                    <p class="text-red mb-3">Roger Reyes
+                                                        <a href="digitask-review.html" class="btn profile-view btn-sm ml-3 txt-red">View Profile
+                                                        </a>
+                                                    </p>
+                                                    <p class="uinfo">61 Arthur St, Strathfield NSW 2135, Australia</p>
+                                                    <p class="uinfo">(077)989-4459</p>
+                                                </div>
+                                                <hr>
+                                                <div class="col-md-5 col-12" >
+                                                    <button class="btn redbtn txt-red mt-4 mb-4">Pay 50A$ Online</button>
+                                                    <div class="float-left">
+                                                        <p class="mb-2">Billed on</p>
+                                                        <p class="mb-2">Appointment on</p>
+                                                        <p class="mb-2">Status</p>
+                                                        <p class="mb-2">Payment Due</p>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <p class="font-weight-bold mb-2">1st Nov 2018</p>
+                                                        <p class="font-weight-bold mb-2">2nd Nov 2018</p>
+                                                        <p class="font-weight-bold mb-2">Booked</p>
+                                                        <p class="font-weight-bold mb-2">2nd Nov 2018</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="table">
+                                        <thead>
+                                            <th class="border-0">Item</th>
+                                            <th class="text-right border-0">Qty</th>
+                                            <th class="text-right border-0">Cost</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="bg-light">
+                                                <td>General AC Repair</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">299A$</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Upto 1T</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">99A$</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-right font-weight-bold">Sub Total</td>
+                                                <td class="text-right">398 A$</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-0"></td>
+                                                <td class="text-right border-0">GST</td>
+                                                <td class="text-right border-0">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-0"></td>
+                                                <td class="text-right border-0">Service</td>
+                                                <td class="text-right border-0">0</td>
+                                            </tr>
+                                            <tr >
+                                                <td class="border-0"></td>
+                                                <td class="text-right font-weight-bold border-0">Total</td>
+                                                <td class="text-right border-0">398 A$</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 col-12">
+                                                <p class="mb-2">Billed to</p>
+                                                <p class="mb-1 font-weight-bold">Digitask LLC</p>
+                                                <p class="mb-1 uinfo">Downtown Area, Sidney</p>
+                                                <p class="mb-1 uinfo">(077)989-4459</p>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <button class="btn greenbtn">398 A$ + On inspection Charges</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="order-info">
+                            <div class="heading headingTwo" id="headingTwo">
+                                <p class="collapse_header mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Order ID #84823<i class="fas fa-chevron-down float-right mt-1 ml-1 mr-2"></i></p>                 
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="cardbody p-3">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade secondmodal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="exampleModalCenterTitle">Download Apps</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="font-weight-bold info">We’ll send a download link via SMS to your Phone</p>
+                    <form action="" method="post">
+                        <input type="text" name="phone" placeholder="Phone" id="phone" class="form-control mobile-num">
+                        <button type="button" class="btn submit form-control font-weight-bold">Send SMS</button>
+                    </form>
+                    <div class="seperator">
+                        <p class="line">or</p>
+                    </div>
+                    <div class="store-image">
+                        <ul>
+                            <li>
+                                <img src="images/google_play.png">
+                            </li>
+                            <li>
+                                <img src="images/app_store.png">
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade editModal" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="editModalTitle">Edit Profile</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   <form action="" method="post">
+                        <input type="email" name="email" placeholder="Email" id="email" class="form-control email-id">
+                        <input type="number" name="phone" placeholder="Phone" id="phone" class="form-control mobile-num">
+                        <div class="text-right mt-5">
+                            <button type="button" class="btn btn-success submit">Save</button>
+                            <button type="button" class="btn btn-danger cancel">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
